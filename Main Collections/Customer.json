@@ -1,0 +1,13 @@
+{
+"customer_id": 1,
+"first_name": "Luke",
+"last_name": "Bryan",
+"email": "luke.bryan@gmail.com",
+"phone": "967-525-1000",
+"address": "600 California St, San Francisco, California",
+"pet":[{
+    "pet_name": "Puppy",
+    "age":"1.0",
+    "species": "Dog"
+}]
+}

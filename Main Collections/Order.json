@@ -1,0 +1,22 @@
+{"order_id":2,
+"order_date":"7/31/2023",
+"total_amount":"$4948.92",
+"customer_id":225,
+"order_details":
+[{"product":"Cumin - Whole",
+"quantity":40,
+"unit_price":9.1,
+"order_details_id":"897c6640-554c-453a-a717-49f9f255527a"
+},
+{"product":"Maintenance Removal Charge",
+"quantity":74,
+"unit_price":4.6,
+"order_details_id":"26c017ba-2e51-454b-af6a-bd82f75bb702"
+},
+{"product":"Doilies - 12, Paper",
+"quantity":33,
+"unit_price":4.4,
+"order_details_id":"72aa4c3b-be83-498d-832b-aad8d45bf213"
+}
+]
+}

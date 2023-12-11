@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <% if (order) { %>
+  <form action="/orders/<%=order.order_id%>/edit" method="post">
+    <div>
+      <label>Order Id: <output><%= order.order_id %></output> </label>
+    </div>
+    <div>
+      <label>Order Date:</label><input type="text" id="order_date" name="order_date" value="<%= order.order_date%>" required>
+    </div>
+    <div>
+      <label>Total Amount: <input type="text" id="total_amount" name="total_amount" value="<%= order.total_amount%>" required> </label>
+    </div>
+    <div>
+      <label>Customer ID: <input type="text" id="customer_id" name="customer_id" value="<%= order.customer_id%>" required> </label>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+  <% } else {%>
+  <form action="/orders/add" method="post">
+    <div>
+      <label>Order Id:</label><input type="number" id="id" name="id" required>
+    </div>
+    <div>
+      <label>Order Date:</label><input type="text" id="order_date" name="order_date" required>
+    </div>
+    <div>
+      <label>Toatl Amount: <input type="text" id="total_amount" name="total_amount" required> </label>
+    </div>
+    <div>
+      <label>Customer ID: <input type="text" id="customer_id" name="customer_id" required> </label>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+  <% }%>
+
+</body>
+
+</html>

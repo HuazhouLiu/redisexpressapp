@@ -1,0 +1,10 @@
+Update with Redis
+Redis will be used to store the most recent 10 changed orders
+Redis Data Structures
+I used the Redis Lists to record recently added or edited orders
+key = “cache:orders”
+value = {
+order_date: order_date (“order:id:order_date”),
+total_amount: total_amount(“order:id:total_amount”),
+customer_id: customer_id(“order:id:customer_id”),
+}
